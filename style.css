@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 90%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background-color: rgba(178, 173, 173, 0.367);
+}
+
+.heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+    gap: 30px;
+    
+}
+.line{
+    color:rgb(182, 28, 169);
+    margin-top: -30px;
+}
+
+.main-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin: 10px;
+    width: 100%;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card{
+    padding: 10px;
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    
+}
+
+.card img{
+    width: 100%;
+    border-radius: 14px;
+
+}
+
+.coupon{
+    margin: 5px 5px 5px 150px ;
+    width: fit-content;
+    border: 2px dashed rgb(182, 28, 169);
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 30px;
+    padding: 0;
+    border-radius: 12px;
+
+}
+
+.coupon > div{
+    margin-left: 10px;
+    color: rgb(182, 28, 169);
+    font-weight: bold;
+}
+
+
+.copy{
+    width: 20px;
+    height: 40px;
+    border-left:2px dashed rgb(182, 28, 169) ;
+    /* border: 2px dashed red; */
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.coupon img{
+    border-radius: 0;
+    
+}
+
+@media (max-width:765px) {
+    .main-container{
+        display: inline-block;        
+    }
+    
+}
